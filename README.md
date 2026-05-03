@@ -1,3 +1,3 @@
-# Interface Technologies, 2024/2025
+# Interface Technologies - MDM
 
 This is the official repository for the Interface Technologies course. 
