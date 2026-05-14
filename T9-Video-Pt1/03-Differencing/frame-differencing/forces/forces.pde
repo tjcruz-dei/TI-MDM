@@ -23,7 +23,7 @@ public void setup() {
   String[] devices = Capture.list();
   printArray(devices);
 
-  cam = new Capture(this, devices[0]);
+  cam = new Capture(this, "pipeline:avfvideosrc device-index=0");
   cam.start();
 
   previous = cam.copy();

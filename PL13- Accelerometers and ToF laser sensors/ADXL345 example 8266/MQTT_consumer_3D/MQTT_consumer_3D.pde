@@ -1,6 +1,5 @@
 /*
     MQTT Arduino->Processing ADXL345 client
-    Adapted from the 3D Visualization Example by Dejan, https://howtomechatronics.com, with added MQTT support
 */
 
 import mqtt.*;
@@ -15,6 +14,7 @@ float roll, pitch, rollF, pitchF;
 void setup() {
   randomSeed(millis());
   size (960, 640, P3D);
+  ID=ID+getAlphaNumericString(15);
   
   client = new MQTTClient(this);
   client.connect("mqtt://broker.hivemq.com",ID);

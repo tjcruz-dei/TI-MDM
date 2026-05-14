@@ -27,8 +27,8 @@ void setup() {
     println("Available cameras:");
     printArray(cameras);
 
-    //if it fails replace cameras[0] per "pipeline:autovideosrc"
-    cam = new Capture(this, 1280, 720, cameras[0],30);
+    //if it fails replace cameras[0] per "pipeline:autovideosrc" or "pipeline:avfvideosrc device-index=0"
+    cam = new Capture(this, 1280, 720, "pipeline:avfvideosrc device-index=0",30);
     cam.start();
   }
   frameRate(30);

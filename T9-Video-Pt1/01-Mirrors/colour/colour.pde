@@ -23,7 +23,7 @@ void setup() {
 
   String[] cameras = Capture.list();
 
-  cam = new Capture(this, 640, 480, cameras[1]);
+  cam = new Capture(this, 640, 480, "pipeline:avfvideosrc device-index=0");
 
   cols = width/CELL_SIZE;
   rows = height/CELL_SIZE;

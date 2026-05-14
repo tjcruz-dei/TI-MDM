@@ -24,7 +24,7 @@ void setup() {
     exit();
   }
 
-  cam = new Capture(this, 640, 480, devices[1]);
+  cam = new Capture(this, 640, 480, "pipeline:avfvideosrc device-index=0");
   cam.start();
 
   colorMode(HSB, 360, 100, 100);

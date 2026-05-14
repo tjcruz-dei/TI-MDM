@@ -27,7 +27,7 @@ void setup() {
     exit();
   }
 
-  cam = new Capture(this, 640, 480, devices[0]);
+  cam = new Capture(this, 640, 480, "pipeline:avfvideosrc device-index=0");
 
   cam.start();
 
