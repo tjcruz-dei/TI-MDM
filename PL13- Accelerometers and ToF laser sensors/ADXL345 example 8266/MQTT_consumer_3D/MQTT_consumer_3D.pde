@@ -21,7 +21,7 @@ void setup() {
   client.subscribe("/roll");
   client.subscribe("/pitch");
   
-  ID=ID+getAlphaNumericString(15);
+  //ID=ID+getAlphaNumericString(15);
 
   println(ID);
 }
