@@ -17,12 +17,8 @@ float roll,pitch,rollF,pitchF=0;
 /************************* WiFi Access Point *********************************/
 
 //Configurations for your wifi network
-#define WLAN_SSID       "IoT-Test"
-#define WLAN_PASS       "Denohd0dkooz8Oir"
-
-//#define WLAN_SSID       "MAELSTROM"
-//#define WLAN_PASS       "c0ffeec0ffee2c0ffee3c0ffee4c0ffee"
-
+#define WLAN_SSID       "SSID"
+#define WLAN_PASS       "PASS"
 
 /************************* Adafruit.io Setup *********************************/
 
